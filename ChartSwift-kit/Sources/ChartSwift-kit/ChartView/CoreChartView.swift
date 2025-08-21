@@ -21,16 +21,15 @@ public enum DataLoadingMethod {
 ///
 /// CoreChartView의 데이터 요청 이벤트를 수신하는 Delegate 프로토콜입니다.
 @MainActor
-public protocol CoreChartViewDelegate<XValue>: AnyObject {
-    associatedtype XValue: ChartableX
+public protocol CoreChartViewDelegate: AnyObject {
     /// Called when the chart requests past data.
     ///
     /// 차트가 과거 데이터를 요청할 때 호출됩니다.
-    func chartViewDidRequestPastData(_ chartView: CoreChartView<XValue>)
+    func chartViewDidRequestPastData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>)
     /// Called when the chart requests future data.
     ///
     /// 차트가 미래 데이터를 요청할 때 호출됩니다.
-    func chartViewDidRequestFutureData(_ chartView: CoreChartView<XValue>)
+    func chartViewDidRequestFutureData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>)
 }
 
 public extension CoreChartViewDelegate {
@@ -669,6 +668,17 @@ public class CoreChartView<XValue: ChartableX>: UIView {
         }
     }
     
+    private var dynamicMaxZoomScale: CGFloat {
+        guard let totalPoints = dataSeries.first?.points.count, totalPoints > 0 else {
+            return maxZoomScale
+        }
+        
+        let minVisiblePoints: CGFloat = 10.0
+        let calculatedScale = CGFloat(totalPoints) / minVisiblePoints
+
+        return min(self.maxZoomScale, calculatedScale)
+    }
+    
     private func calculateDataRange() {
         guard let series = dataSeries.first,
               !series.points.isEmpty
@@ -850,7 +860,7 @@ public class CoreChartView<XValue: ChartableX>: UIView {
         guard chartLayer.frame.contains(locationInChart) else { return }
         
         let dataAnchor = screenToX(locationInChart.x - chartLayer.frame.minX)
-        let newZoomScale = min(self.maxZoomScale, max(self.minZoomScale, zoomScale * gesture.scale))
+        let newZoomScale = min(self.dynamicMaxZoomScale, max(self.minZoomScale, zoomScale * gesture.scale))
         gesture.scale = 1.0
         
         let oldScreenX = xToScreen(dataAnchor)
