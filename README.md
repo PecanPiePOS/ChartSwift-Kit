@@ -33,14 +33,9 @@
 
 ### 🎬 주요 기능 데모 (GIF)
 
-* **부드러운 인터랙션 (Pan & Zoom)**: 사용자가 대용량 데이터를 부드럽게 스크롤하고 확대/축소하는 모습입니다.
-  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="260" alt="Pan and Zoom Demo GIF">
-
-* **실시간 데이터 업데이트 (Real-time Update)**: 데이터가 실시간으로 추가될 때 차트가 동적으로 갱신됩니다.
-  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="260" alt="Real-time Demo GIF">
-
-* **압도적인 성능 (High Performance)**: 5만 개 이상의 데이터 포인트를 즉시 로드하고도 완벽하게 반응성을 유지합니다.
-  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="260" alt="Performance Test Demo GIF">
+| 부드러운 인터랙션 (Pan & Zoom) | 실시간 데이터 업데이트 (Real-time Update) | 압도적인 성능 (High Performance) |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="260" alt="Pan and Zoom Demo GIF"> | <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="260" alt="Real-time Demo GIF"> | <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="260" alt="Performance Test Demo GIF"> |
 
 <br>
 
@@ -58,7 +53,7 @@ ChartSwift-Kit은 Swift Package Manager를 통해 간편하게 설치할 수 있
 1.  Xcode 프로젝트에서 **File** > **Add Packages...** 를 선택합니다.
 2.  오른쪽 상단의 검색창에 아래 **Repository URL을 복사하여 붙여넣으세요.**
     ```
-    [https://github.com/PecanPiePOS/ChartSwift-Kit.git](https://github.com/PecanPiePOS/ChartSwift-Kit.git)
+    https://github.com/PecanPiePOS/ChartSwift-Kit.git
     ```
 3.  **Dependency Rule**에서 `Up to Next Major Version`을 선택하고 **Add Package**를 클릭합니다.
 
@@ -108,14 +103,9 @@ class ViewController: UIViewController {
 
 ### 🎬 Key Feature Demos (GIFs)
 
-* **Smooth Interaction (Pan & Zoom)**: Shows a user smoothly scrolling and zooming through a large dataset.
-  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="260" alt="Pan and Zoom Demo GIF">
-
-* **Real-time Updates**: Demonstrates the chart dynamically updating as new data is appended live.
-  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="260" alt="Real-time Demo GIF">
-
-* **High Performance**: Shows the chart instantly loading 50,000+ data points and remaining perfectly responsive.
-  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="260" alt="Performance Test Demo GIF">
+| Smooth Interaction (Pan & Zoom) | Real-time Updates | High Performance |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="260" alt="Pan and Zoom Demo GIF"> | <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="260" alt="Real-time Demo GIF"> | <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="260" alt="Performance Test Demo GIF"> |
 
 ### 📦 Installation
 
@@ -124,7 +114,7 @@ ChartSwift-Kit is available via the Swift Package Manager.
 1.  In Xcode, select **File** > **Add Packages...**.
 2.  **Copy and paste the repository URL** below into the search bar:
     ```
-    [https://github.com/PecanPiePOS/ChartSwift-Kit.git](https://github.com/PecanPiePOS/ChartSwift-Kit.git)
+    https://github.com/PecanPiePOS/ChartSwift-Kit.git
     ```
 3.  Set the **Dependency Rule** to `Up to Next Major Version` and click **Add Package**.
 
