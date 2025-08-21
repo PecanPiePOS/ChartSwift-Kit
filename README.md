@@ -79,11 +79,55 @@ class ViewController: UIViewController {
 }
 ```
 
+### 🧬 `ChartableX` 프로토콜 활용하기
+
+`CoreChartView`의 가장 큰 장점은 제네릭 `XValue`가 `ChartableX` 프로토콜을 준수하기만 하면 어떤 타입이든 X축에 사용할 수 있다는 것입니다. `ChartableX`는 `Double` 값과 상호 변환이 가능하고, 비교가 가능하면 됩니다.
+
+```swift
+public protocol ChartableX: Comparable, Sendable {
+    var doubleValue: Double { get }
+    init(doubleValue: Double)
+}
+```
+
+#### 기본 타입 (`Date`, `Double`, `Int`)
+`Date`, `Double`, `Int`는 라이브러리에 이미 `ChartableX`가 구현되어 있어 바로 사용할 수 있습니다.
+```swift
+let dateChartView = CoreChartView<Date>()
+let doubleChartView = CoreChartView<Double>()
+```
+
+#### 커스텀 타입 예시: `TradingDay`
+거래일을 나타내는 커스텀 타입을 직접 만들어 X축에 사용할 수 있습니다.
+
+```swift
+// 1. ChartableX를 준수하는 커스텀 타입 정의
+struct TradingDay: ChartableX, Comparable, Sendable {
+    let day: Int
+    
+    // ChartableX 준수
+    var doubleValue: Double { Double(day) }
+    init(doubleValue: Double) { self.day = Int(doubleValue) }
+    
+    // Comparable 준수
+    static func < (lhs: TradingDay, rhs: TradingDay) -> Bool {
+        return lhs.day < rhs.day
+    }
+}
+
+// 2. 차트 뷰와 데이터 생성 시 커스텀 타입 사용
+let chartView = CoreChartView<TradingDay>()
+let points: [ChartDataPoint<TradingDay>] = [
+    .init(x: TradingDay(day: 1), y: 150.0),
+    .init(x: TradingDay(day: 2), y: 155.5),
+    .init(x: TradingDay(day: 5), y: 153.2) // X축 값이 연속적일 필요 없음
+]
+chartView.setData(series: [.init(id: "stock", points: points, color: .green)], type: .line)
+```
+
 ### 🛠️ 상세 사용법 (In-Depth Usage)
 
 #### Delegate를 이용한 데이터 페이징 (무한 스크롤)
-
-`CoreChartViewDelegate`를 사용하여 사용자가 차트 끝까지 스크롤했을 때 비동기적으로 데이터를 로드할 수 있습니다.
 
 **중요:** Delegate 메서드는 제네릭 `<XValue>`를 포함하므로, 내가 원하는 차트의 타입(`CoreChartView<Date>` 등)으로 **타입 캐스팅(`as?`)**하여 안전하게 사용해야 합니다.
 
@@ -97,56 +141,22 @@ class MyViewController: UIViewController, CoreChartViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Delegate 위임
         chartView.delegate = self
         chartView.canLoadPastData = true // 과거 데이터 로딩 기능 활성화
-        
-        // ... 뷰 설정 및 초기 데이터 로드 ...
     }
 
     // MARK: - CoreChartViewDelegate
     
     func chartViewDidRequestPastData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>) {
-        // Delegate로부터 받은 chartView가 내가 원하는 <Date> 타입인지 확인
-        guard let dateChartView = chartView as? CoreChartView<Date> else {
-            return
-        }
+        guard let dateChartView = chartView as? CoreChartView<Date> else { return }
         
-        print("과거 데이터를 요청합니다...")
-        
-        // 비동기적으로 데이터 로드
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let pastPoints: [ChartDataPoint<Date>] = self.generatePastData()
-            // 타입이 확인된 dateChartView에 데이터 추가
             dateChartView.prependData(points: pastPoints, forSeriesId: "someId")
         }
     }
-    
-    func chartViewDidRequestFutureData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>) {
-        // 필요 시 미래 데이터 로딩도 동일한 방식으로 구현
-    }
-    
-    // ...
 }
 ```
-
-### 🛠️ API 레퍼런스 (API Reference)
-
-#### `CoreChartView<XValue>`
-
--   `setData(series: [ChartDataSeries<XValue>], type: ChartType)`: 차트의 전체 데이터를 설정하고 새로고침합니다.
--   `appendDataPoint(_ point: ChartDataPoint<XValue>, seriesId: String)`: 시리즈 끝에 새 데이터 포인트를 추가합니다. (실시간용)
--   `prependData(points: [ChartDataPoint<XValue>], forSeriesId: String)`: 시리즈 시작 부분에 과거 데이터를 추가합니다. (페이징용)
--   `updateLastDataPoint(_ point: ChartDataPoint<XValue>, seriesId: String)`: 마지막 데이터 포인트를 업데이트합니다.
--   `enterRealTimeMode()` / `exitRealTimeMode()`: 실시간 모드를 시작하거나 종료합니다.
--   `delegate: CoreChartViewDelegate?`: 데이터 로딩 이벤트를 수신할 Delegate 객체입니다.
--   `canLoadPastData: Bool`, `canLoadFutureData: Bool`: 데이터 페이징 기능 활성화 여부를 설정합니다.
-
-#### `CoreChartViewDelegate`
-
--   `chartViewDidRequestPastData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>)`: 차트가 과거 데이터를 요청할 때 호출됩니다.
--   `chartViewDidRequestFutureData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>)`: 차트가 미래 데이터를 요청할 때 호출됩니다.
 
 ---
 <br>
@@ -156,7 +166,7 @@ class MyViewController: UIViewController, CoreChartViewDelegate {
 
 ## 🇺🇸 English
 
-**ChartSwift-Kit** is a high-performance iOS chart library designed to visualize large datasets smoothly and efficiently. The main component of this library is **`CoreChartView`**, which provides an intuitive API and powerful customization options for easy integration into any iOS application.
+**ChartSwift-Kit** is a high-performance iOS chart library designed to visualize large datasets smoothly and efficiently. The main component is **`CoreChartView`**, which provides an intuitive API for easy integration.
 
 ### ✨ Features
 
@@ -166,15 +176,15 @@ class MyViewController: UIViewController, CoreChartViewDelegate {
 -   **🕒 Real-time Ready**: Dynamically add and update data on the chart as it comes in real-time.
 -   **📜 Infinite Scroll**: Asynchronously load past or future data via the delegate pattern when the user scrolls to the end.
 -   **🧬 Generic by Design**: Use any custom type that conforms to `ChartableX` for the X-axis, not just `Date` or `Double`.
--   **📚 Thoroughly Documented**: All public APIs are fully documented in both English and Korean for ease of use.
+-   **📚 Thoroughly Documented**: All public APIs are fully documented in both English and Korean.
 -   **🔧 Easily Customizable**: Effortlessly configure the chart's appearance using the `ChartConfiguration` object.
 
 ### 📦 Installation
 
-ChartSwift-Kit is easily installed via the Swift Package Manager.
+ChartSwift-Kit is available via the Swift Package Manager.
 
 1.  In Xcode, select **File** > **Add Packages...**.
-2.  Enter the repository URL in the search bar:
+2.  Enter the repository URL:
     ```
     [https://github.com/PecanPiePOS/ChartSwift-Kit.git](https://github.com/PecanPiePOS/ChartSwift-Kit.git)
     ```
@@ -207,11 +217,55 @@ class ViewController: UIViewController {
 }
 ```
 
+### 🧬 Working with the `ChartableX` Protocol
+
+The key advantage of `CoreChartView` is its generic `XValue`, which can be any type that conforms to the `ChartableX` protocol. A type is `ChartableX`-compliant if it can be compared and converted to and from a `Double` value.
+
+```swift
+public protocol ChartableX: Comparable, Sendable {
+    var doubleValue: Double { get }
+    init(doubleValue: Double)
+}
+```
+
+#### Built-in Types (`Date`, `Double`, `Int`)
+The library provides `ChartableX` conformance for `Date`, `Double`, and `Int` out of the box.
+```swift
+let dateChartView = CoreChartView<Date>()
+let doubleChartView = CoreChartView<Double>()
+```
+
+#### Custom Type Example: `TradingDay`
+You can create your own custom type, such as `TradingDay`, to use on the X-axis.
+
+```swift
+// 1. Define a custom type that conforms to ChartableX
+struct TradingDay: ChartableX, Comparable, Sendable {
+    let day: Int
+    
+    // Conformance to ChartableX
+    var doubleValue: Double { Double(day) }
+    init(doubleValue: Double) { self.day = Int(doubleValue) }
+    
+    // Conformance to Comparable
+    static func < (lhs: TradingDay, rhs: TradingDay) -> Bool {
+        return lhs.day < rhs.day
+    }
+}
+
+// 2. Use the custom type when creating the chart view and its data
+let chartView = CoreChartView<TradingDay>()
+let points: [ChartDataPoint<TradingDay>] = [
+    .init(x: TradingDay(day: 1), y: 150.0),
+    .init(x: TradingDay(day: 2), y: 155.5),
+    .init(x: TradingDay(day: 5), y: 153.2) // X-axis values do not need to be sequential
+]
+chartView.setData(series: [.init(id: "stock", points: points, color: .green)], type: .line)
+```
+
 ### 🛠️ In-Depth Usage
 
 #### Data Paging (Infinite Scroll) with the Delegate
-
-Use the `CoreChartViewDelegate` to asynchronously load more data when the user scrolls to the end of the chart.
 
 **Important:** Because the delegate methods are generic (`<XValue>`), you must safely **cast (`as?`)** the chart view parameter to your specific type (e.g., `CoreChartView<Date>`) before using it.
 
@@ -225,56 +279,22 @@ class MyViewController: UIViewController, CoreChartViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Set the delegate
         chartView.delegate = self
         chartView.canLoadPastData = true // Enable past data loading
-        
-        // ... View setup and initial data loading ...
     }
 
     // MARK: - CoreChartViewDelegate
     
     func chartViewDidRequestPastData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>) {
-        // Check if the chart view from the delegate is the <Date> type we expect
-        guard let dateChartView = chartView as? CoreChartView<Date> else {
-            return
-        }
+        guard let dateChartView = chartView as? CoreChartView<Date> else { return }
         
-        print("Requesting past data...")
-        
-        // Load data asynchronously
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let pastPoints: [ChartDataPoint<Date>] = self.generatePastData()
-            // Add data to the type-casted chart view
             dateChartView.prependData(points: pastPoints, forSeriesId: "someId")
         }
     }
-    
-    func chartViewDidRequestFutureData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>) {
-        // Implement future data loading in the same way if needed
-    }
-    
-    // ...
 }
 ```
-
-### 🛠️ API Reference
-
-#### `CoreChartView<XValue>`
-
--   `setData(series: [ChartDataSeries<XValue>], type: ChartType)`: Sets the entire dataset for the chart and re-renders it.
--   `appendDataPoint(_ point: ChartDataPoint<XValue>, seriesId: String)`: Appends a new data point to the end of a series (for real-time).
--   `prependData(points: [ChartDataPoint<XValue>], forSeriesId: String)`: Prepends past data to the beginning of a series (for paging).
--   `updateLastDataPoint(_ point: ChartDataPoint<XValue>, seriesId: String)`: Updates the last data point of a series.
--   `enterRealTimeMode()` / `exitRealTimeMode()`: Enters or exits real-time mode.
--   `delegate: CoreChartViewDelegate?`: The delegate object to receive data loading events.
--   `canLoadPastData: Bool`, `canLoadFutureData: Bool`: Enables or disables the data paging feature.
-
-#### `CoreChartViewDelegate`
-
--   `chartViewDidRequestPastData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>)`: Called when the chart requests past data.
--   `chartViewDidRequestFutureData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>)`: Called when the chart requests future data.
 
 ---
 
