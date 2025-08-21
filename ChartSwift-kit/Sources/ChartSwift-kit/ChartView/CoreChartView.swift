@@ -106,8 +106,7 @@ public class CoreChartView<XValue: ChartableX>: UIView {
     private var savedZoomScale: CGFloat = 1.0
     private var savedDataRange: (xMin: XValue, xMax: XValue, yMin: Double, yMax: Double)?
     private var minZoomScale: CGFloat = 1.0
-    private var maxZoomScale: CGFloat = 15.0
-    
+    private var lastVisibleYRange: (yMin: Double, yMax: Double)?
     // MARK: 청크 렌더링 시스템을 위한 프로퍼티
     private let chunkSize: Int = 1024
     private var simplifiedChunkCache: [Int: [ChartDataPoint<XValue>]] = [:]
@@ -269,6 +268,7 @@ public class CoreChartView<XValue: ChartableX>: UIView {
     
     private func forceFullReload() {
         guard isLayoutInitialized else { return }
+        lastVisibleYRange = nil
         simplifiedChunkCache.removeAll()
         isAutoScrolling = true
         isInitialZoomSet = false
@@ -581,6 +581,42 @@ public class CoreChartView<XValue: ChartableX>: UIView {
         prefetchChunks(around: startChunkIndex...endChunkIndex)
     }
     
+    private func calculateVisibleDataRange() -> (xMin: XValue, xMax: XValue, yMin: Double, yMax: Double)? {
+        let visibleXStart = screenToX(0)
+        let visibleXEnd = screenToX(chartBounds.width)
+        
+        guard let series = dataSeries.first,
+              let firstVisibleIndex = series.points.firstIndex(where: { $0.x >= visibleXStart }),
+              let lastVisibleIndex = series.points.lastIndex(where: { $0.x <= visibleXEnd }),
+              firstVisibleIndex <= lastVisibleIndex
+        else {
+            if var fallbackRange = self.dataRange, let lastYRange = self.lastVisibleYRange {
+                fallbackRange.yMin = lastYRange.yMin
+                fallbackRange.yMax = lastYRange.yMax
+                return fallbackRange
+            }
+            return self.dataRange
+        }
+        
+        let visiblePoints = series.points[firstVisibleIndex...lastVisibleIndex]
+        
+        let yMin = visiblePoints.map { $0.minValue ?? $0.y }.min() ?? 0
+        let yMax = visiblePoints.map { $0.maxValue ?? $0.y }.max() ?? 1
+        
+        let yRange = max(1, yMax - yMin)
+        let finalYMax = yMax + yRange * 0.2
+        let finalYMin = max(0, yMin - yRange * 0.1)
+        
+        self.lastVisibleYRange = (yMin: finalYMin, yMax: finalYMax)
+        
+        if var newRange = self.dataRange {
+            newRange.yMin = finalYMin
+            newRange.yMax = finalYMax
+            return newRange
+        }
+        return nil
+    }
+    
     private func prefetchChunks(around visibleIndices: ClosedRange<Int>) {
         guard let series = dataSeries.first, !series.points.isEmpty else { return }
         
@@ -670,13 +706,12 @@ public class CoreChartView<XValue: ChartableX>: UIView {
     
     private var dynamicMaxZoomScale: CGFloat {
         guard let totalPoints = dataSeries.first?.points.count, totalPoints > 0 else {
-            return maxZoomScale
+            return 1.0
         }
         
         let minVisiblePoints: CGFloat = 10.0
-        let calculatedScale = CGFloat(totalPoints) / minVisiblePoints
-
-        return min(self.maxZoomScale, calculatedScale)
+        
+        return CGFloat(totalPoints) / minVisiblePoints
     }
     
     private func calculateDataRange() {

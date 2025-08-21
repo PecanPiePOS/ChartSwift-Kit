@@ -10,16 +10,13 @@
 
 [🇰🇷 **한국어**](#korean) | [🇺🇸 **English**](#english)
 
-  <br>
-  <img src="https://raw.githubusercontent.com/user-attachments/assets/195b0fe1-c967-46c2-8438-e4b9d5c411ba" width="600" />
-  <br />
-  
-  [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
-  [![Platform](https://img.shields.io/badge/platform-iOS%2014.0%2B-blue.svg)](https://developer.apple.com/ios/)
-  [![Swift Version](https://img.shields.io/badge/Swift-5.7%2B-orange.svg)](https://swift.org)
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
 </div>
+
+<br>
+
+| Line Chart | Area Chart | Bar Chart |
+| :---: | :---: | :---: |
+| https://private-user-images.githubusercontent.com/89404664/480389024-0cef3cf3-efc3-4065-95d0-1eac53b7b17f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODkwMjQtMGNlZjNjZjMtZWZjMy00MDY1LTk1ZDAtMWVhYzUzYjdiMTdmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVhYWY3YWQ2NmM5ZGQ0ZTY2ZjM3Y2I3MGUxYThmYjYwODQ4ZmUwY2MwYzllMzdhMmVkMDY2MzExOTYyZWU3YzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EGHbCbFgkcR6kl2q0CQF3c1FbGCBOKuKUCpn2eA0fjg | https://private-user-images.githubusercontent.com/89404664/480389072-1f07e083-8d34-4bc1-9d11-62a2df4c384d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODkwNzItMWYwN2UwODMtOGQzNC00YmMxLTlkMTEtNjJhMmRmNGMzODRkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIyNjdkYjg3Y2IwYTM5YWRmMThiNjJkYjkyYjEwZTVmMmRlYTE5NjZjMDlmOGRjYmM2ODU3MTE4NmMyNGFmY2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wG1ZVDIFqjfpSfbG3A5hWRf5dWX1bpC6XSYqF-jOuIk | https://private-user-images.githubusercontent.com/89404664/480389118-f8bc2c5d-9e27-4f21-9888-0134797337de.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODkxMTgtZjhiYzJjNWQtOWUyNy00ZjIxLTk4ODgtMDEzNDc5NzMzN2RlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRkZGRmZDYyOWQ0MTc0NTNkNjQzMWE5MGRhNTg0NDg2NDJhNDJhNjg3YWVhZjZjMGY0ODVlZTA0ZjRmOThiMmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dTyc28F9yNKsylPT8oWweViI0eoE7KmBy10dBfZyNrM |
 
 <br>
 <br>
@@ -41,12 +38,23 @@
 -   **📚 완벽한 문서화**: 모든 Public API에 상세한 영문/한글 주석이 달려있어 사용이 편리.
 -   **🔧 손쉬운 커스터마이징**: `ChartConfiguration` 객체를 통해 차트의 외형을 손쉽게 설정.
 
+### 🎬 주요 기능 데모 (GIF)
+
+* **부드러운 인터랙션 (Pan & Zoom)**: 사용자가 대용량 데이터를 부드럽게 스크롤하고 확대/축소하는 모습입니다.
+    ![Pan and Zoom Demo MP4](https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63)
+
+* **실시간 데이터 업데이트 (Real-time Update)**: 데이터가 실시간으로 추가될 때 차트가 동적으로 갱신됩니다.
+    ![Real-time Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388868-8b567572-2106-44c5-8c4c-2a9cc33f822d.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg4NjgtOGI1Njc1NzItMjEwNi00NGM1LThjNGMtMmE5Y2MzM2Y4MjJkLk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTExNDA3MzIzNjI2M2VjOGFmMjYzMGFkNzg5NTZlZmRiZjQ5YmEwYWQwZmMzMjM5MTI2NjBiMjM0NWRiZjE5YjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ioJuhQzFRChIbdV7m_h3wLAxgvEZnMed9dS3anhpdVE)
+
+* **압도적인 성능 (High Performance)**: 5만 개 이상의 데이터 포인트를 즉시 로드하고도 완벽하게 반응성을 유지합니다.
+    ![Performance Test Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388943-ba51cab1-65a7-4e39-a181-e07056b4dec5.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg5NDMtYmE1MWNhYjEtNjVhNy00ZTM5LWExODEtZTA3MDU2YjRkZWM1Lk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE3NzY3ZWE4YWUyNGE3YWZhMjBhMjE1OGRmZTMyMmNhYjJhYjJlNDgyNGM1OWFmYmM4NzI5OTNmNDAzMTdmMTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.5IbvhoxamMe1svEjsbfkPBeOxJEMBn5fo2qE1gLUXv0)
+
 ### 📦 설치 (Installation)
 
 ChartSwift-Kit은 Swift Package Manager를 통해 간편하게 설치할 수 있습니다.
 
 1.  Xcode 프로젝트에서 **File** > **Add Packages...** 를 선택합니다.
-2.  검색창에 아래의 Repository URL을 입력합니다.
+2.  오른쪽 상단의 검색창에 아래 **Repository URL을 복사하여 붙여넣으세요.**
     ```
     [https://github.com/PecanPiePOS/ChartSwift-Kit.git](https://github.com/PecanPiePOS/ChartSwift-Kit.git)
     ```
@@ -54,15 +62,13 @@ ChartSwift-Kit은 Swift Package Manager를 통해 간편하게 설치할 수 있
 
 ### 🚀 빠른 시작 (Quick Start)
 
-단 몇 줄의 코드로 멋진 라인 차트를 만들 수 있습니다.
-
 ```swift
 import ChartSwift_Kit
 import UIKit
 
 class ViewController: UIViewController {
 
-    let chartView = CoreChartView<Double>() // X축 타입을 Double로 지정
+    let chartView = CoreChartView<Double>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,85 +81,6 @@ class ViewController: UIViewController {
         
         view.addSubview(chartView)
         // ... Auto Layout 설정 ...
-    }
-}
-```
-
-### 🧬 `ChartableX` 프로토콜 활용하기
-
-`CoreChartView`의 가장 큰 장점은 제네릭 `XValue`가 `ChartableX` 프로토콜을 준수하기만 하면 어떤 타입이든 X축에 사용할 수 있다는 것입니다. `ChartableX`는 `Double` 값과 상호 변환이 가능하고, 비교가 가능하면 됩니다.
-
-```swift
-public protocol ChartableX: Comparable, Sendable {
-    var doubleValue: Double { get }
-    init(doubleValue: Double)
-}
-```
-
-#### 기본 타입 (`Date`, `Double`, `Int`)
-`Date`, `Double`, `Int`는 라이브러리에 이미 `ChartableX`가 구현되어 있어 바로 사용할 수 있습니다.
-```swift
-let dateChartView = CoreChartView<Date>()
-let doubleChartView = CoreChartView<Double>()
-```
-
-#### 커스텀 타입 예시: `TradingDay`
-거래일을 나타내는 커스텀 타입을 직접 만들어 X축에 사용할 수 있습니다.
-
-```swift
-// 1. ChartableX를 준수하는 커스텀 타입 정의
-struct TradingDay: ChartableX, Comparable, Sendable {
-    let day: Int
-    
-    // ChartableX 준수
-    var doubleValue: Double { Double(day) }
-    init(doubleValue: Double) { self.day = Int(doubleValue) }
-    
-    // Comparable 준수
-    static func < (lhs: TradingDay, rhs: TradingDay) -> Bool {
-        return lhs.day < rhs.day
-    }
-}
-
-// 2. 차트 뷰와 데이터 생성 시 커스텀 타입 사용
-let chartView = CoreChartView<TradingDay>()
-let points: [ChartDataPoint<TradingDay>] = [
-    .init(x: TradingDay(day: 1), y: 150.0),
-    .init(x: TradingDay(day: 2), y: 155.5),
-    .init(x: TradingDay(day: 5), y: 153.2) // X축 값이 연속적일 필요 없음
-]
-chartView.setData(series: [.init(id: "stock", points: points, color: .green)], type: .line)
-```
-
-### 🛠️ 상세 사용법 (In-Depth Usage)
-
-#### Delegate를 이용한 데이터 페이징 (무한 스크롤)
-
-**중요:** Delegate 메서드는 제네릭 `<XValue>`를 포함하므로, 내가 원하는 차트의 타입(`CoreChartView<Date>` 등)으로 **타입 캐스팅(`as?`)**하여 안전하게 사용해야 합니다.
-
-```swift
-import ChartSwift_Kit
-import UIKit
-
-class MyViewController: UIViewController, CoreChartViewDelegate {
-
-    let chartView = CoreChartView<Date>() // 내 차트의 X축은 Date 타입
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        chartView.delegate = self
-        chartView.canLoadPastData = true // 과거 데이터 로딩 기능 활성화
-    }
-
-    // MARK: - CoreChartViewDelegate
-    
-    func chartViewDidRequestPastData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>) {
-        guard let dateChartView = chartView as? CoreChartView<Date> else { return }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            let pastPoints: [ChartDataPoint<Date>] = self.generatePastData()
-            dateChartView.prependData(points: pastPoints, forSeriesId: "someId")
-        }
     }
 }
 ```
@@ -175,16 +102,27 @@ class MyViewController: UIViewController, CoreChartViewDelegate {
 -   **👆 Intuitive Gestures**: Freely explore data by pinching to zoom and panning to scroll.
 -   **🕒 Real-time Ready**: Dynamically add and update data on the chart as it comes in real-time.
 -   **📜 Infinite Scroll**: Asynchronously load past or future data via the delegate pattern when the user scrolls to the end.
--   **🧬 Generic by Design**: Use any custom type that conforms to `ChartableX` for the X-axis, not just `Date` or `Double`.
+-   **🧬 Generic by Design**: Use any custom type that conforms to `ChartableX` for the X-axis.
 -   **📚 Thoroughly Documented**: All public APIs are fully documented in both English and Korean.
--   **🔧 Easily Customizable**: Effortlessly configure the chart's appearance using the `ChartConfiguration` object.
+-   **🔧 Easily Customizable**: Effortlessly configure the chart's appearance using `ChartConfiguration`.
+
+### 🎬 Key Feature Demos (GIFs)
+
+* **Smooth Interaction (Pan & Zoom)**: Shows a user smoothly scrolling and zooming through a large dataset.
+    ![Pan and Zoom Demo MP4](https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63)
+
+* **Real-time Updates**: Demonstrates the chart dynamically updating as new data is appended live.
+    ![Real-time Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388868-8b567572-2106-44c5-8c4c-2a9cc33f822d.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg4NjgtOGI1Njc1NzItMjEwNi00NGM1LThjNGMtMmE5Y2MzM2Y4MjJkLk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTExNDA3MzIzNjI2M2VjOGFmMjYzMGFkNzg5NTZlZmRiZjQ5YmEwYWQwZmMzMjM5MTI2NjBiMjM0NWRiZjE5YjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ioJuhQzFRChIbdV7m_h3wLAxgvEZnMed9dS3anhpdVE)
+
+* **High Performance**: Shows the chart instantly loading 50,000+ data points and remaining perfectly responsive.
+    ![Performance Test Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388943-ba51cab1-65a7-4e39-a181-e07056b4dec5.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg5NDMtYmE1MWNhYjEtNjVhNy00ZTM5LWExODEtZTA3MDU2YjRkZWM1Lk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE3NzY3ZWE4YWUyNGE3YWZhMjBhMjE1OGRmZTMyMmNhYjJhYjJlNDgyNGM1OWFmYmM4NzI5OTNmNDAzMTdmMTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.5IbvhoxamMe1svEjsbfkPBeOxJEMBn5fo2qE1gLUXv0)
 
 ### 📦 Installation
 
 ChartSwift-Kit is available via the Swift Package Manager.
 
 1.  In Xcode, select **File** > **Add Packages...**.
-2.  Enter the repository URL:
+2.  **Copy and paste the repository URL** below into the search bar:
     ```
     [https://github.com/PecanPiePOS/ChartSwift-Kit.git](https://github.com/PecanPiePOS/ChartSwift-Kit.git)
     ```
@@ -192,15 +130,13 @@ ChartSwift-Kit is available via the Swift Package Manager.
 
 ### 🚀 Quick Start
 
-You can create a beautiful line chart with just a few lines of code.
-
 ```swift
 import ChartSwift_Kit
 import UIKit
 
 class ViewController: UIViewController {
 
-    let chartView = CoreChartView<Double>() // Specify the X-axis type as Double
+    let chartView = CoreChartView<Double>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -213,85 +149,6 @@ class ViewController: UIViewController {
         
         view.addSubview(chartView)
         // ... Set Auto Layout constraints ...
-    }
-}
-```
-
-### 🧬 Working with the `ChartableX` Protocol
-
-The key advantage of `CoreChartView` is its generic `XValue`, which can be any type that conforms to the `ChartableX` protocol. A type is `ChartableX`-compliant if it can be compared and converted to and from a `Double` value.
-
-```swift
-public protocol ChartableX: Comparable, Sendable {
-    var doubleValue: Double { get }
-    init(doubleValue: Double)
-}
-```
-
-#### Built-in Types (`Date`, `Double`, `Int`)
-The library provides `ChartableX` conformance for `Date`, `Double`, and `Int` out of the box.
-```swift
-let dateChartView = CoreChartView<Date>()
-let doubleChartView = CoreChartView<Double>()
-```
-
-#### Custom Type Example: `TradingDay`
-You can create your own custom type, such as `TradingDay`, to use on the X-axis.
-
-```swift
-// 1. Define a custom type that conforms to ChartableX
-struct TradingDay: ChartableX, Comparable, Sendable {
-    let day: Int
-    
-    // Conformance to ChartableX
-    var doubleValue: Double { Double(day) }
-    init(doubleValue: Double) { self.day = Int(doubleValue) }
-    
-    // Conformance to Comparable
-    static func < (lhs: TradingDay, rhs: TradingDay) -> Bool {
-        return lhs.day < rhs.day
-    }
-}
-
-// 2. Use the custom type when creating the chart view and its data
-let chartView = CoreChartView<TradingDay>()
-let points: [ChartDataPoint<TradingDay>] = [
-    .init(x: TradingDay(day: 1), y: 150.0),
-    .init(x: TradingDay(day: 2), y: 155.5),
-    .init(x: TradingDay(day: 5), y: 153.2) // X-axis values do not need to be sequential
-]
-chartView.setData(series: [.init(id: "stock", points: points, color: .green)], type: .line)
-```
-
-### 🛠️ In-Depth Usage
-
-#### Data Paging (Infinite Scroll) with the Delegate
-
-**Important:** Because the delegate methods are generic (`<XValue>`), you must safely **cast (`as?`)** the chart view parameter to your specific type (e.g., `CoreChartView<Date>`) before using it.
-
-```swift
-import ChartSwift_Kit
-import UIKit
-
-class MyViewController: UIViewController, CoreChartViewDelegate {
-
-    let chartView = CoreChartView<Date>() // My chart's X-axis is of type Date
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        chartView.delegate = self
-        chartView.canLoadPastData = true // Enable past data loading
-    }
-
-    // MARK: - CoreChartViewDelegate
-    
-    func chartViewDidRequestPastData<XValue: ChartableX>(_ chartView: CoreChartView<XValue>) {
-        guard let dateChartView = chartView as? CoreChartView<Date> else { return }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            let pastPoints: [ChartDataPoint<Date>] = self.generatePastData()
-            dateChartView.prependData(points: pastPoints, forSeriesId: "someId")
-        }
     }
 }
 ```
