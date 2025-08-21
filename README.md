@@ -16,7 +16,7 @@
 
 | Line Chart | Area Chart | Bar Chart |
 | :---: | :---: | :---: |
-| https://private-user-images.githubusercontent.com/89404664/480389024-0cef3cf3-efc3-4065-95d0-1eac53b7b17f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODkwMjQtMGNlZjNjZjMtZWZjMy00MDY1LTk1ZDAtMWVhYzUzYjdiMTdmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVhYWY3YWQ2NmM5ZGQ0ZTY2ZjM3Y2I3MGUxYThmYjYwODQ4ZmUwY2MwYzllMzdhMmVkMDY2MzExOTYyZWU3YzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EGHbCbFgkcR6kl2q0CQF3c1FbGCBOKuKUCpn2eA0fjg | https://private-user-images.githubusercontent.com/89404664/480389072-1f07e083-8d34-4bc1-9d11-62a2df4c384d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODkwNzItMWYwN2UwODMtOGQzNC00YmMxLTlkMTEtNjJhMmRmNGMzODRkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIyNjdkYjg3Y2IwYTM5YWRmMThiNjJkYjkyYjEwZTVmMmRlYTE5NjZjMDlmOGRjYmM2ODU3MTE4NmMyNGFmY2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wG1ZVDIFqjfpSfbG3A5hWRf5dWX1bpC6XSYqF-jOuIk | https://private-user-images.githubusercontent.com/89404664/480389118-f8bc2c5d-9e27-4f21-9888-0134797337de.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODkxMTgtZjhiYzJjNWQtOWUyNy00ZjIxLTk4ODgtMDEzNDc5NzMzN2RlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRkZGRmZDYyOWQ0MTc0NTNkNjQzMWE5MGRhNTg0NDg2NDJhNDJhNjg3YWVhZjZjMGY0ODVlZTA0ZjRmOThiMmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dTyc28F9yNKsylPT8oWweViI0eoE7KmBy10dBfZyNrM |
+| <img src="https://github.com/user-attachments/assets/0cef3cf3-efc3-4065-95d0-1eac53b7b17f" width="260" alt="Line Chart Example"> | <img src="https://github.com/user-attachments/assets/1f07e083-8d34-4bc1-9d11-62a2df4c384d" width="260" alt="Area Chart Example"> | <img src="https://github.com/user-attachments/assets/f8bc2c5d-9e27-4f21-9888-0134797337de" width="260" alt="Bar Chart Example"> |
 
 <br>
 <br>
@@ -41,13 +41,13 @@
 ### 🎬 주요 기능 데모 (GIF)
 
 * **부드러운 인터랙션 (Pan & Zoom)**: 사용자가 대용량 데이터를 부드럽게 스크롤하고 확대/축소하는 모습입니다.
-    ![Pan and Zoom Demo MP4](https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63)
+  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="600" alt="Pan and Zoom Demo GIF">
 
 * **실시간 데이터 업데이트 (Real-time Update)**: 데이터가 실시간으로 추가될 때 차트가 동적으로 갱신됩니다.
-    ![Real-time Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388868-8b567572-2106-44c5-8c4c-2a9cc33f822d.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg4NjgtOGI1Njc1NzItMjEwNi00NGM1LThjNGMtMmE5Y2MzM2Y4MjJkLk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTExNDA3MzIzNjI2M2VjOGFmMjYzMGFkNzg5NTZlZmRiZjQ5YmEwYWQwZmMzMjM5MTI2NjBiMjM0NWRiZjE5YjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ioJuhQzFRChIbdV7m_h3wLAxgvEZnMed9dS3anhpdVE)
+  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="600" alt="Real-time Demo GIF">
 
 * **압도적인 성능 (High Performance)**: 5만 개 이상의 데이터 포인트를 즉시 로드하고도 완벽하게 반응성을 유지합니다.
-    ![Performance Test Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388943-ba51cab1-65a7-4e39-a181-e07056b4dec5.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg5NDMtYmE1MWNhYjEtNjVhNy00ZTM5LWExODEtZTA3MDU2YjRkZWM1Lk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE3NzY3ZWE4YWUyNGE3YWZhMjBhMjE1OGRmZTMyMmNhYjJhYjJlNDgyNGM1OWFmYmM4NzI5OTNmNDAzMTdmMTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.5IbvhoxamMe1svEjsbfkPBeOxJEMBn5fo2qE1gLUXv0)
+  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="600" alt="Performance Test Demo GIF">
 
 ### 📦 설치 (Installation)
 
@@ -67,7 +67,6 @@ import ChartSwift_Kit
 import UIKit
 
 class ViewController: UIViewController {
-
     let chartView = CoreChartView<Double>()
 
     override func viewDidLoad() {
@@ -96,7 +95,6 @@ class ViewController: UIViewController {
 **ChartSwift-Kit** is a high-performance iOS chart library designed to visualize large datasets smoothly and efficiently. The main component is **`CoreChartView`**, which provides an intuitive API for easy integration.
 
 ### ✨ Features
-
 -   **🚀 Outstanding Performance**: Handles tens of thousands of data points seamlessly with chunk-based rendering and LTTB downsampling.
 -   **🎨 Multiple Chart Types**: Supports essential chart types, including Line, Bar, Area, and HealthData.
 -   **👆 Intuitive Gestures**: Freely explore data by pinching to zoom and panning to scroll.
@@ -109,13 +107,13 @@ class ViewController: UIViewController {
 ### 🎬 Key Feature Demos (GIFs)
 
 * **Smooth Interaction (Pan & Zoom)**: Shows a user smoothly scrolling and zooming through a large dataset.
-    ![Pan and Zoom Demo MP4](https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63)
+  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="600" alt="Pan and Zoom Demo GIF">
 
 * **Real-time Updates**: Demonstrates the chart dynamically updating as new data is appended live.
-    ![Real-time Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388868-8b567572-2106-44c5-8c4c-2a9cc33f822d.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg4NjgtOGI1Njc1NzItMjEwNi00NGM1LThjNGMtMmE5Y2MzM2Y4MjJkLk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTExNDA3MzIzNjI2M2VjOGFmMjYzMGFkNzg5NTZlZmRiZjQ5YmEwYWQwZmMzMjM5MTI2NjBiMjM0NWRiZjE5YjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ioJuhQzFRChIbdV7m_h3wLAxgvEZnMed9dS3anhpdVE)
+  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="600" alt="Real-time Demo GIF">
 
 * **High Performance**: Shows the chart instantly loading 50,000+ data points and remaining perfectly responsive.
-    ![Performance Test Demo MP4](https://private-user-images.githubusercontent.com/89404664/480388943-ba51cab1-65a7-4e39-a181-e07056b4dec5.MOV?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NjMyNjksIm5iZiI6MTc1NTc2Mjk2OSwicGF0aCI6Ii84OTQwNDY2NC80ODAzODg5NDMtYmE1MWNhYjEtNjVhNy00ZTM5LWExODEtZTA3MDU2YjRkZWM1Lk1PVj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIxVDA3NTYwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE3NzY3ZWE4YWUyNGE3YWZhMjBhMjE1OGRmZTMyMmNhYjJhYjJlNDgyNGM1OWFmYmM4NzI5OTNmNDAzMTdmMTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.5IbvhoxamMe1svEjsbfkPBeOxJEMBn5fo2qE1gLUXv0)
+  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="600" alt="Performance Test Demo GIF">
 
 ### 📦 Installation
 
@@ -129,13 +127,11 @@ ChartSwift-Kit is available via the Swift Package Manager.
 3.  Set the **Dependency Rule** to `Up to Next Major Version` and click **Add Package**.
 
 ### 🚀 Quick Start
-
 ```swift
 import ChartSwift_Kit
 import UIKit
 
 class ViewController: UIViewController {
-
     let chartView = CoreChartView<Double>()
 
     override func viewDidLoad() {
