@@ -12,14 +12,7 @@
 
 </div>
 
-<br>
 
-| Line Chart | Area Chart | Bar Chart |
-| :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/0cef3cf3-efc3-4065-95d0-1eac53b7b17f" width="260" alt="Line Chart Example"> | <img src="https://github.com/user-attachments/assets/1f07e083-8d34-4bc1-9d11-62a2df4c384d" width="260" alt="Area Chart Example"> | <img src="https://github.com/user-attachments/assets/f8bc2c5d-9e27-4f21-9888-0134797337de" width="260" alt="Bar Chart Example"> |
-
-<br>
-<br>
 
 <a name="korean"></a>
 
@@ -41,13 +34,22 @@
 ### 🎬 주요 기능 데모 (GIF)
 
 * **부드러운 인터랙션 (Pan & Zoom)**: 사용자가 대용량 데이터를 부드럽게 스크롤하고 확대/축소하는 모습입니다.
-  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="600" alt="Pan and Zoom Demo GIF">
+  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="260" alt="Pan and Zoom Demo GIF">
 
 * **실시간 데이터 업데이트 (Real-time Update)**: 데이터가 실시간으로 추가될 때 차트가 동적으로 갱신됩니다.
-  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="600" alt="Real-time Demo GIF">
+  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="260" alt="Real-time Demo GIF">
 
 * **압도적인 성능 (High Performance)**: 5만 개 이상의 데이터 포인트를 즉시 로드하고도 완벽하게 반응성을 유지합니다.
-  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="600" alt="Performance Test Demo GIF">
+  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="260" alt="Performance Test Demo GIF">
+
+<br>
+
+| Line Chart | Area Chart | Bar Chart |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/0cef3cf3-efc3-4065-95d0-1eac53b7b17f" width="260" alt="Line Chart Example"> | <img src="https://github.com/user-attachments/assets/1f07e083-8d34-4bc1-9d11-62a2df4c384d" width="260" alt="Area Chart Example"> | <img src="https://github.com/user-attachments/assets/f8bc2c5d-9e27-4f21-9888-0134797337de" width="260" alt="Bar Chart Example"> |
+
+<br>
+<br>
 
 ### 📦 설치 (Installation)
 
@@ -107,13 +109,13 @@ class ViewController: UIViewController {
 ### 🎬 Key Feature Demos (GIFs)
 
 * **Smooth Interaction (Pan & Zoom)**: Shows a user smoothly scrolling and zooming through a large dataset.
-  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="600" alt="Pan and Zoom Demo GIF">
+  <img src="https://github.com/user-attachments/assets/6bafabd7-39b6-4b1c-92b0-e3b658f43b63" width="260" alt="Pan and Zoom Demo GIF">
 
 * **Real-time Updates**: Demonstrates the chart dynamically updating as new data is appended live.
-  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="600" alt="Real-time Demo GIF">
+  <img src="https://github.com/user-attachments/assets/8b567572-2106-44c5-8c4c-2a9cc33f822d" width="260" alt="Real-time Demo GIF">
 
 * **High Performance**: Shows the chart instantly loading 50,000+ data points and remaining perfectly responsive.
-  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="600" alt="Performance Test Demo GIF">
+  <img src="https://github.com/user-attachments/assets/ba51cab1-65a7-4e39-a181-e07056b4dec5" width="260" alt="Performance Test Demo GIF">
 
 ### 📦 Installation
 
